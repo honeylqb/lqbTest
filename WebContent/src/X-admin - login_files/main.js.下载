@@ -1,0 +1,10 @@
+function check_login() {
+	if(is_login){
+		return true;
+	}else{
+		layer.alert('还没有登录,请先登录!',function () {
+			location.href=login_url;
+		})
+		return false;
+	}
+}
