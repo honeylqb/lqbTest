@@ -18,12 +18,12 @@ public class execPythonUtil {
 			new Thread(new SyncPipe(p.getErrorStream(), System.err)).start();
 			new Thread(new SyncPipe(p.getInputStream(), System.out)).start();
 			PrintWriter stdin = new PrintWriter(p.getOutputStream());
-//聽 聽 聽 聽 聽 聽 /** 浠ヤ笅鍙互杈撳叆鑷繁鎯宠緭鍏ョ殑cmd鍛戒护 */
+
 			stdin.println("python "+" E:/LqbUser/eclipseWorkSpace/Test/src/py/testhello.py "+" liuqingbin"+" 121");//姝ゅ鑷濉啓锛屽垏璁版湁绌烘牸锛岃窡cmd鐨勬墽琛岃鍙ヤ竴鑷淬��
 			
 			stdin.close();
 		} catch (Exception e) {
-			throw new RuntimeException("缂栬瘧鍑虹幇閿欒锛�" + e.getMessage());
+			throw new RuntimeException("异常" + e.getMessage());
 		}
 	}
 }

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 public class HelloPython {
 	/**
 	 * 
-	 * ������
+	 * @author LiuQingbin
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -23,8 +23,7 @@ public class HelloPython {
 	        }  
 	        in.close();
 	        System.out.println("--------3----------------");
-	        //java�����е�process.waitFor()����ֵΪ0��ʾ���ǵ���python�ű��ɹ���
-            //����ֵΪ1��ʾ����python�ű�ʧ�ܣ��������ͨ�������ϼ�����0��1���������෴
+
 	        int re = process.waitFor();  
 	        System.out.println(re);
         } catch (Exception e) {

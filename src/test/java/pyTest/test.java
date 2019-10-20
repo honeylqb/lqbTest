@@ -31,8 +31,7 @@ public class test {
             
            
 	        in.close();
-	        //java�����е�process.waitFor()����ֵΪ0��ʾ���ǵ���python�ű��ɹ���
-            //����ֵΪ1��ʾ����python�ű�ʧ�ܣ��������ͨ�������ϼ�����0��1���������෴
+
 	        int re = process.waitFor();  
 	        System.out.println(re);
 	        if(re == 0){

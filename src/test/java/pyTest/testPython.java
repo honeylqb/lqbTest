@@ -29,7 +29,7 @@ public class testPython {
 	        }  
 
 	        in.close();
-	       
+	        	//判断程序运行是否成功
 	        int re = process.waitFor();  
 	        System.out.println(re);
 	        if(re == 0){
